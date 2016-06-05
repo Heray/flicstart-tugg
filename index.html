@@ -1,0 +1,697 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# flicstart: http://ogp.me/ns/fb/flicstart#">
+	<!-- <base href="http://flicstart.herokuapp.com/" target="_blank"> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="description"  content="Flicstart empowers movie lovers to demand screenings of any content they choose at their local theaters." />
+  <meta property="fb:app_id"   content="278097482298978" /> 
+  <meta property="og:type"     content="website" /> 
+  <meta property="og:url"      content="http://flicstart.com/" /> 
+  <meta property="og:title"    content="Flicstart - any movie, any theater" />
+  <meta property="og:image"    content="http://flicstart.com/img/flicstart-logo.jpg" />
+  <!-- <meta property="og:image"    content="http://flicstart.com/img/cover-fb.jpeg" /> -->
+  <meta property="og:description"  content="Flicstart empowers movie lovers to demand screenings of any content they choose at their local theater." />
+
+  
+<link href="css/bootstrap.css" rel="stylesheet" />
+
+<link href="css/flicstart.css" rel="stylesheet" />
+
+<link href="css/datepicker.css" rel="stylesheet" />
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- 
+<script src="js/bootstrap-typeahead.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/jquery.flot.js"></script>
+ -->
+      
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="D7AwcMteL645I32XM+SZLKwURNuRYqnAs3ROUYC/GrM=" name="csrf-token" />
+<script>
+<!-- Add CSRF tag to all ajax calls -->
+	$.ajaxSetup({
+		headers : {
+			'X-CSRF-Token' : 'D7AwcMteL645I32XM+SZLKwURNuRYqnAs3ROUYC/GrM='
+		},
+	});
+</script>
+<script src="js/flicstart.js"></script>
+
+<title>Flicstart - any movie, any theater</title>
+<LINK REL="SHORTCUT ICON" HREF="img/flicstart-icon.gif" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34316323-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+
+<div style="width: 100%; height: 100%; z-index: 99999; background-color: rgb(255,0,255)">
+</div>
+
+<div id="fb-root"></div>
+
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '278097482298978', // App ID
+        status     : true, // check login status
+        cookie     : true, // enable cookies to allow the server to access the session
+        xfbml      : true  // parse XFBML
+      });
+    };
+
+    // Load the SDK Asynchronously
+    (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = "//connect.facebook.net/en_US/all.js";
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+         
+  </script>
+  
+
+	<div id="main-nav">
+		<div class="container">
+			<div class="row">
+				<div class="span7">
+					<div class="logo">
+						<a><div class="flicstart"></div></a>
+					</div>
+					<div class="divider"></div>
+					<div class="c">
+						<a >Discover</a>
+					</div>
+					<div class="divider"></div>
+					<div class="c">
+						<a>Start</a>
+					</div>
+					<div class="divider"></div>
+				</div>
+				<div class="span4 offset1">
+
+<form class="search-bar" method="get" action="/home/discover">
+    <input type="text" name="movie_text" placeholder="Find Movies">
+</form>
+
+					<div class="divider"></div>
+
+
+					<div class="c auth">
+						<a ><strong>Me</strong></a>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="c auth">
+						  
+  <a>Log In</a>  
+  
+
+					</div>
+					<div class="clear-both"></div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	
+<div>
+	<div id="pitch-box" class="absolute in-shadow" style="height:auto">
+
+		<div class="pitch" style="text-align: center; padding-left: 0px;">
+			Any Movie, Any Theater
+			<!-- Flicstart empowers movie lovers <br>to demand screenings at local theaters <!-- <a>Learn More ...</i></a> -->
+		</div>
+
+		<div class="" style="margin: 35px; font-size: 16px; color: #777; line-height: 20px">
+
+
+
+		Dear Flicstarters,
+
+		<br><br>
+
+		We are pleased to announce that Flicstart has joined forces with Tugg.com! 
+
+		<br><br>
+
+		Flicstart was founded nearly four years ago with a simple idea: that audiences should be able to choose the content they see at their local movie theater. Tugg continues to build on that vision, and we could not be more thrilled to be part of the Tugg family. 
+
+		<br><br>
+
+		To continue attending and hosting awesome on-demand movie screenings, simply head over to Tugg.com to browse existing events or create your own!
+
+		<br><br>
+
+		Thank you for being part of our community.
+
+		<br><br>
+
+		Jeff, Andrew, Paul, Mayda, and Joe
+		<br>
+		Co-Founders
+
+		<br><br>
+
+
+
+		</div>
+	</div>
+
+
+<!-- 
+	<div id="promotion" class="absolute hidden">
+
+		<div id="title">Any Movie, Any Theater</div>
+
+		<div class="row-fluid" id="confirm">
+			<div class="span2 city-icon">
+				<img src="img/city-icon-green.png">
+			</div>
+			<div class="span5" id="confirm-city">
+			<form method="get" action="/home/discover">
+				<div>Confirm your city:</div>
+				<div class="row-fluid">
+					<div class="span9">
+						<input id="promotion-city" autofocus="autofocus" type="text" name="city" class="span12" placeholder="City" autocomplete="off" >
+					</div>
+					<input type="hidden" name="city_id" id="promotion_city_id">
+					<div class="span3">
+						<img class="spinner hidden" src="img/spinner.gif" />
+					</div>
+				</div>
+			</form>
+			</div>
+			
+			<div class="span4 but">
+				<a>Get Started Now</a>
+			</div>
+		</div>
+	</div>
+ -->
+ 
+
+	<div id="poster-banner">
+		<div id="box" class="hidden">
+		<div class="r">
+				<span class="holder">
+					<a>
+						<img src="img/posters/p1.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p28.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p3.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p4.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p5.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p6.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p7.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p8.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p32.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p10.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p11.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p12.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p29.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p30.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p31.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p2.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p9.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p24.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p13.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p1.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p28.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p3.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p4.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p5.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p6.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p7.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p8.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p32.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p10.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p11.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p12.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p29.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p30.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p31.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p2.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p9.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p24.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p13.jpeg" />
+					</a>
+				</span>
+		</div>
+		
+		<div class="r">
+				<span class="holder">
+					<a>
+						<img src="img/posters/p14.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p36.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p15.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p16.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p17.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p18.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p20.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p21.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p22.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p23.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p37.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p25.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p26.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p27.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p33.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p34.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p35.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p19.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p14.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p36.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p15.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p16.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p17.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p18.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p20.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p21.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p22.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p23.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p37.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p25.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p26.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p27.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p33.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p34.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p35.jpeg" />
+					</a>
+				</span>
+				<span class="holder">
+					<a>
+						<img src="img/posters/p19.jpeg" />
+					</a>
+				</span>
+		</div>
+		</div>
+	</div>
+		
+</div>
+
+
+	
+	<!-- 
+	<div class="background-top">
+		<div class="board"></div>
+		<div class="filmstrip"></div>
+	</div>
+	 -->
+	<div class="body-background">
+		<div class="body-foregroud">
+	
+			
+
+
+
+
+
+
+
+ <br>
+ 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--  
+<div class="container well">
+	<div class="process panel">
+	<div class="row">
+		<div class="span4 step step1">
+			<img src="img/tag.png">
+			<div class="txt">
+				<div class="up">Pick a time, movie, theater</div>
+				<div class="down">
+					<div>Users create the event,</div>
+					<div>we confirm the availability.</div>
+				</div>
+				<div><a class="label-black">Start a screening</a></div>
+			</div>
+		</div>
+		<div class="span4 step step2">
+			<img src="img/share.png">
+			<div class="txt">
+				<div class="up">Movie lovers join in</div>
+				<div class="down">
+					<div>If enough people sign up,</div>
+					<div>the event is on.</div>
+				</div>
+				<div><a class="label-black">Discover screenings</a></div>
+			</div>
+		</div>
+		<div class="span4 step step3">
+			<img src="img/enjoy.png">
+			<div class="txt">
+				<div class="up">Enjoy the show!</div>
+				<div class="down">
+					<div>See the movies you love</div>
+					<div>at your favorite theater.</div>
+				</div>
+				<div><a class="label-black">Learn More</a></div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+</div>
+ -->
+
+
+
+
+
+		</div>
+	</div>
+
+	
+<div id="footer">
+	<div class="container">
+		<div class="navbar">
+			<ul class="nav">
+				<li><a>Privacy Policy</a></li>
+				<li><a>Refund Policy</a></li>
+				<li><a>Contact</a></li>
+				<li><a>Team</a></li>
+				<li><a>FAQ</a></li>
+				<li><a>
+					<div class="fb-like" data-href="http://www.flicstart.com" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+</div>
+
+
+
+</body>
+</html>
